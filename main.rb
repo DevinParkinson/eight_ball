@@ -4,6 +4,7 @@ require 'colorized_string'
 
 class Main
   def self.run
+    #RANDOM CHANGE TO TEST PULLING
     #arr = ColorizedString.colors
     #puts arr
     puts "ASK A QUESTION".colorize(:magenta)
