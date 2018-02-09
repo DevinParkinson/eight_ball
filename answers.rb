@@ -1,5 +1,5 @@
 require 'colorize'
-#RANDOM CHANGE
+
 class Answers
   @q
   def initialize(question)
