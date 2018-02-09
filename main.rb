@@ -2,12 +2,15 @@ require_relative 'answers'
 require 'colorize'
 
 class Main
-def shake{
-  question = gets.to_i
-  if question.include?(/[£$]\d+,\d+\.\d+|\d+\.\d+|\d+/)
-    puts "no numbers please"
-  else
-    answers = Answers.new(question)
-    answes.shake
-}
+  def self.run
+    puts "ASK A QUESTION"
+    question = gets.strip
+    if question.is_a? Numeric
+      puts "no numbers please"
+    else
+      answers = Answers.new(question)
+      answers.shake
+    end
+  end
 end
+Main.run

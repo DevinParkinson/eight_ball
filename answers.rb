@@ -1,5 +1,13 @@
+include 'colorize'
+
 class Answers
+  @q
   def initialize(question)
-Answers = ["Yes", "no", "maybe", "why are you asking"]
-end
+    @q = question
+  end
+
+  def shake
+    arr = ["Yes", "no", "maybe", "why are you asking"]
+    puts arr.sample().to_s.upcase.colorize(:green)
+  end
 end
