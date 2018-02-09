@@ -1,4 +1,4 @@
-include 'colorize'
+require 'colorize'
 
 class Answers
   @q
